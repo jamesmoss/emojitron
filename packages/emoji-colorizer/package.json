@@ -1,0 +1,39 @@
+{
+  "name": "@emoji-toolkit/colorizer",
+  "version": "1.0.0",
+  "description": "Apply color modifiers to emojis using skin tone and variation selectors",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "emoji",
+    "color",
+    "skin-tone",
+    "modifier"
+  ],
+  "license": "MIT"
+}
