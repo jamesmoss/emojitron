@@ -1,0 +1,7 @@
+{
+  "name": "tessl/npm-emoji-toolkit--size",
+  "version": "1.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/%40emoji-toolkit/size@1.0.0",
+  "summary": "Size manipulation utilities for emojis that enable scaling, repeating, and arranging emojis in visual patterns including grids, pyramids, and progress bars"
+}

@@ -1,0 +1,41 @@
+{
+  "context": "This evaluation criteria assesses how effectively the engineer uses the @emoji-toolkit/size package to implement a visual status dashboard. The focus is on correct API usage, proper configuration of package functions, and accurate application of emoji manipulation techniques.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Progress Bar Creation",
+      "description": "Uses createProgressBar() function correctly with filled emoji ('█'), empty emoji ('░'), calculated average progress value (0-1 range), and length parameter of 10 to generate the overall progress indicator.",
+      "max_score": "30"
+    },
+    {
+      "name": "Progress Clamping Logic",
+      "description": "Correctly handles progress values exceeding 1.0 by clamping them to 1.0 before passing to createProgressBar() or any calculations, ensuring that progress bars and percentage displays never exceed 100%.",
+      "max_score": "15"
+    },
+    {
+      "name": "Tiny Size Scaling",
+      "description": "Uses scaleEmoji() or makeTiny() function to display the 🔴 emoji at 'tiny' size (wrapped with middle dots: ·🔴·) for tasks with 0-33% progress.",
+      "max_score": "10"
+    },
+    {
+      "name": "Medium Size Scaling",
+      "description": "Uses scaleEmoji() with 'medium' size parameter to display the 🟡 emoji (resulting in double repetition: 🟡🟡) for tasks with 34-66% progress.",
+      "max_score": "10"
+    },
+    {
+      "name": "Large Size Scaling",
+      "description": "Uses scaleEmoji() or makeLarge() function to display the 🟢 emoji at 'large' size (triple repetition: 🟢🟢🟢) for tasks with 67-99% progress.",
+      "max_score": "10"
+    },
+    {
+      "name": "Giant Size Scaling",
+      "description": "Uses scaleEmoji() or makeGiant() function to display the ✅ emoji at 'giant' size (5 repetitions with spaces: ✅ ✅ ✅ ✅ ✅) for tasks with progress >= 1.0.",
+      "max_score": "10"
+    },
+    {
+      "name": "Pyramid Pattern Generation",
+      "description": "Uses createPyramid() function with the 🎉 emoji and height parameter of 3 to generate the celebration pyramid when all tasks have progress >= 1.0. The pyramid should have proper centering spaces.",
+      "max_score": "15"
+    }
+  ]
+}
