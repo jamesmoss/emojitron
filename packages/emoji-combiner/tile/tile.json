@@ -1,0 +1,7 @@
+{
+  "name": "tessl/npm-emoji-toolkit--combiner",
+  "version": "1.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/@emoji-toolkit/combiner@1.0.0",
+  "summary": "Combine emojis into sequences, ZWJ combinations, and creative patterns"
+}

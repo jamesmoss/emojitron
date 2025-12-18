@@ -1,0 +1,36 @@
+{
+  "context": "This criteria evaluates how well an engineer uses the @emoji-toolkit/combiner package to implement emoji formatting functionality. The focus is on correct usage of ZWJ sequences, preset sequences, and pattern generation functions.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "ZWJ Profession Creation",
+      "description": "Uses createProfession() function to combine person emoji with profession symbol for developer (💻), scientist (🔬), and chef (🍳) professions. Should properly join emojis with Zero-Width Joiner.",
+      "max_score": 25
+    },
+    {
+      "name": "Preset Sequence Retrieval",
+      "description": "Uses getPresetSequence() function to retrieve moon and time preset sequences. Should correctly return preset sequences by name and handle unknown presets by returning empty string.",
+      "max_score": 20
+    },
+    {
+      "name": "Wave Pattern Generation",
+      "description": "Uses wave() function to create wave patterns with rising and falling emoji counts. Should properly implement space-separated pattern that peaks at the specified maxCount.",
+      "max_score": 15
+    },
+    {
+      "name": "Mirror Pattern Creation",
+      "description": "Uses mirror() function to create palindromic emoji sequences. Should correctly create mirrored patterns from emoji arrays.",
+      "max_score": 15
+    },
+    {
+      "name": "ZWJ Sequence Detection",
+      "description": "Uses isZWJSequence() function to detect professional emojis. Should correctly identify ZWJ sequences (return true for profession emojis) and distinguish them from regular emojis (return false).",
+      "max_score": 15
+    },
+    {
+      "name": "Emoji Decomposition",
+      "description": "Uses splitZWJ() or decomposeZWJ() function to break down ZWJ sequences into component emojis. Should correctly return an array of individual emoji components.",
+      "max_score": 10
+    }
+  ]
+}
