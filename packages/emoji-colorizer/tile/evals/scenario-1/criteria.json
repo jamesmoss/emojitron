@@ -1,0 +1,26 @@
+{
+  "context": "This criteria evaluates how effectively the engineer uses @emoji-toolkit/colorizer package APIs to implement emoji text transformation with skin tone and color theme processing. It focuses exclusively on correct usage of package functions, proper parameter handling, and understanding of the package's capabilities.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Skin tone application",
+      "description": "Uses applyAllSkinTones() function to apply skin tones to all compatible emojis in the text when skinTone parameter is not null",
+      "max_score": 30
+    },
+    {
+      "name": "Color theme replacement",
+      "description": "Uses colorizeHearts() function to replace heart and color emojis with themed alternatives when colorTheme parameter is not null",
+      "max_score": 30
+    },
+    {
+      "name": "Null parameter handling",
+      "description": "Correctly handles null parameters by skipping the corresponding transformation (skin tone or color theme) without calling unnecessary functions",
+      "max_score": 20
+    },
+    {
+      "name": "Transformation ordering",
+      "description": "Applies transformations in the correct order: skin tone processing first, then color theme processing",
+      "max_score": 20
+    }
+  ]
+}
