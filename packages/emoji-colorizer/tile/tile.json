@@ -1,0 +1,7 @@
+{
+  "name": "tessl/npm-emoji-toolkit--colorizer",
+  "version": "1.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/%40emoji-toolkit/colorizer@1.0.0",
+  "summary": "Apply color modifiers to emojis using skin tone variations and color mappings"
+}

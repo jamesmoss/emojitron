@@ -1,0 +1,26 @@
+{
+  "context": "This evaluation criteria assesses how well the engineer uses the @emoji-toolkit/colorizer package to implement an emoji text normalizer. The focus is exclusively on the correct and proficient use of the package's skin tone modification API.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Use applyAllSkinTones",
+      "description": "The normalizeSkinTones function uses the applyAllSkinTones function from @emoji-toolkit/colorizer to apply consistent skin tones to all compatible emojis in text.",
+      "max_score": 35
+    },
+    {
+      "name": "Use getSkinTone",
+      "description": "The hasSkinToneModifiers function uses getSkinTone from @emoji-toolkit/colorizer to detect whether emojis have skin tone modifiers. The implementation should check multiple emojis in the text and return true if any emoji has a skin tone.",
+      "max_score": 30
+    },
+    {
+      "name": "Use removeSkinTone",
+      "description": "The stripSkinTones function uses removeSkinTone from @emoji-toolkit/colorizer to remove skin tone modifiers from emojis. The implementation should process all emojis in the text to strip their skin tones.",
+      "max_score": 25
+    },
+    {
+      "name": "Correct SkinTone type",
+      "description": "The code imports and uses the SkinTone type from @emoji-toolkit/colorizer or defines it correctly as the union type 'light' | 'medium-light' | 'medium' | 'medium-dark' | 'dark' matching the package's definition.",
+      "max_score": 10
+    }
+  ]
+}
