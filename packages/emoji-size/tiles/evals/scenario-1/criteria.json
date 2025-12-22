@@ -1,0 +1,36 @@
+{
+  "context": "This criteria evaluates the engineer's proficiency in using the @emoji-toolkit/size package to build a message board generator. It focuses on correct usage of emoji scaling functions, geometric pattern generators, progress bar creation, and text processing functions.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Grid Pattern Creation",
+      "description": "Uses createGrid() to generate the top border with correct parameters (1 row, 15 columns, decoration emoji)",
+      "max_score": 15
+    },
+    {
+      "name": "Title Emoji Scaling",
+      "description": "Uses scaleAllEmojis() to scale emojis in the title text based on importance ranges, correctly mapping importance values to appropriate EmojiSize types ('tiny', 'small', 'medium', 'large')",
+      "max_score": 20
+    },
+    {
+      "name": "Progress Bar Implementation",
+      "description": "Uses createProgressBar() with correct parameters: fill emoji ('●'), empty emoji ('○'), importance value as progress (0-1), and length of 12 segments",
+      "max_score": 20
+    },
+    {
+      "name": "Message Emoji Scaling",
+      "description": "Uses scaleAllEmojis() to scale all emojis in message strings to 'medium' size while preserving non-emoji text content",
+      "max_score": 15
+    },
+    {
+      "name": "Conditional Shape Generation",
+      "description": "Correctly implements conditional logic to generate different bottom decorations: createDiamond() with size 3 for importance >= 0.75, createPyramid() with height 2 for importance 0.5-0.74, or repeatEmoji() with count 3 and space separator for importance < 0.5",
+      "max_score": 20
+    },
+    {
+      "name": "Function Selection",
+      "description": "Uses the appropriate @emoji-toolkit/size functions throughout rather than manual string manipulation or repetition for emoji operations",
+      "max_score": 10
+    }
+  ]
+}
