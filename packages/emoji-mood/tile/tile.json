@@ -1,0 +1,7 @@
+{
+  "name": "tessl/npm-emoji-toolkit--mood",
+  "version": "1.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/%40emoji-toolkit/mood@1.0.0",
+  "summary": "Transform emoji moods - turn happy emojis sad, angry emojis calm, and more"
+}

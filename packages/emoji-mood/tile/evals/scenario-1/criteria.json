@@ -1,0 +1,31 @@
+{
+  "context": "This evaluation assesses how effectively the engineer uses the @emoji-toolkit/mood package API to implement an emoji sentiment analyzer. The criteria focus exclusively on proper usage of package functions like detectMood, getEmojisForMood, makeSadHappy, makeAngryCool, and transformAllMoods.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "detectMood usage",
+      "description": "Uses detectMood function to identify the mood category of individual emojis. Should iterate through text characters and call detectMood on each emoji to determine its mood for sentiment scoring and mood distribution counting.",
+      "max_score": 25
+    },
+    {
+      "name": "getEmojisForMood usage",
+      "description": "Uses getEmojisForMood function to retrieve all emojis belonging to specific mood categories. Essential for iterating through mood categories when calculating mood distribution or identifying which emojis to count in each category.",
+      "max_score": 20
+    },
+    {
+      "name": "Selective transformation functions",
+      "description": "Uses makeSadHappy and makeAngryCool functions for the selective mood normalization requirement. These specialized functions should be used to transform only sad emojis to happy and angry emojis to calm, leaving other moods unchanged.",
+      "max_score": 25
+    },
+    {
+      "name": "transformAllMoods usage",
+      "description": "Uses transformAllMoods function to convert all recognized emojis to neutral mood when sentiment score is below -2. This function should be called with 'neutral' as the target mood parameter.",
+      "max_score": 20
+    },
+    {
+      "name": "Handling non-determinism",
+      "description": "Test implementation properly handles the non-deterministic nature of emoji transformations by checking that transformed emojis belong to the correct mood category (using detectMood or getEmojisForMood for validation) rather than expecting specific emoji values.",
+      "max_score": 10
+    }
+  ]
+}
