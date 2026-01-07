@@ -1,0 +1,31 @@
+{
+  "context": "This evaluation assesses how effectively the engineer uses the @emoji-toolkit/size package to implement a task progress dashboard. The criteria focus exclusively on correct usage of package-specific functions and features, not on general coding practices.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Conditional emoji scaling",
+      "description": "Uses scaleEmoji() function with appropriate size parameters ('tiny', 'medium', 'large', 'giant') based on progress ranges: 0-33% uses 'tiny', 34-66% uses 'medium', 67-99% uses 'large', 100% uses 'giant'. Must correctly map progress percentages to size categories.",
+      "max_score": 30
+    },
+    {
+      "name": "Progress bar creation",
+      "description": "Uses createProgressBar() function with correct parameters: fill emoji (🟢), empty emoji (⚪), calculated average progress as decimal (0-1), and length of 10. Must pass the average progress value correctly calculated from all tasks.",
+      "max_score": 25
+    },
+    {
+      "name": "Pyramid pattern display",
+      "description": "Uses createPyramid() function with celebration emoji (🎉) and height of 3, displayed only when ALL tasks have progress >= 1.0. Must correctly implement the conditional logic to check completion status and call the function appropriately.",
+      "max_score": 20
+    },
+    {
+      "name": "Progress calculation logic",
+      "description": "Correctly calculates overall progress as arithmetic mean (sum of all task progress values divided by task count) and converts individual task progress from decimals (0-1) to percentages (0-100) by multiplying by 100 and rounding to nearest whole number using Math.round().",
+      "max_score": 15
+    },
+    {
+      "name": "Output formatting correctness",
+      "description": "Produces output that matches the specified format exactly: 'Task Status:' section with scaled emojis and percentages, 'Overall Progress:' line with progress bar and percentage, and optional celebration pyramid. The visual output must match expected test case outputs including proper emoji scaling, spacing, and newlines.",
+      "max_score": 10
+    }
+  ]
+}
